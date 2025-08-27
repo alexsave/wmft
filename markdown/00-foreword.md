@@ -1,4 +1,4 @@
-# Foreword
+### Foreword
 
 Welcome to your running journey! This book is designed to get you from zero to confident runner in the most efficient way possible.
 
@@ -9,13 +9,14 @@ Throughout this guide, you'll find:
 - **Practical callouts** with coach's notes and pro tips
 
 ::: pullquote
-"The secret to getting ahead is getting started."
-— Mark Twain
+**"The secret to getting ahead is getting started."**
+
+- Mark Twain
 :::
 
 ---
 
-## How to Use This Book
+### How to Use This Book
 
 1. **Start with Part I** if you're completely new to running
 2. **Jump to Part II** if you want to get faster

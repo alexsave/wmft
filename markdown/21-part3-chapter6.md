@@ -1,4 +1,4 @@
-# Chapter 6 — The Long Game
+# The Long Game
 
 Running isn't just about the next race or training cycle. The most rewarding part of this sport happens when you zoom out and think in terms of years and decades.
 
@@ -130,7 +130,7 @@ Motivation is what gets you started. Discipline is what keeps you going. Systems
 ### Dealing with Setbacks
 
 **Injury:** Focus on what you can do, not what you can't
-**Burnout:** Take a complete break—the fitness will come back
+**Burnout:** Take a complete break-the fitness will come back
 **Life chaos:** Lower the bar but don't eliminate it entirely  
 **Loss of speed:** Remember why you started running in the first place
 
@@ -140,7 +140,7 @@ The goal isn't perfection. It's persistence.
 
 ## Final Thoughts
 
-Running is a practice, not a performance. Some days will be magical—you'll feel like you could run forever. Other days will be a grind—every step will require willpower.
+Running is a practice, not a performance. Some days will be magical-you'll feel like you could run forever. Other days will be a grind-every step will require willpower.
 
 Both types of days are necessary. Both types of days are valuable.
 

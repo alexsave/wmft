@@ -35,9 +35,9 @@ This book exists because of the countless coaches, training partners, and fellow
 
 ## Version & Changelog
 
-- **v1.0** — Initial release with complete 6-chapter structure
-- **v0.9** — Beta version with sample content
-- **v0.1** — Early draft and template setup
+- **v1.0** - Initial release with complete 6-chapter structure
+- **v0.9** - Beta version with sample content
+- **v0.1** - Early draft and template setup
 
 ## License & Copyright
 

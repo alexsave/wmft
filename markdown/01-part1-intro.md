@@ -1,23 +1,22 @@
-# Part I — Start Fast
+# Part I - Start Fast
 
-# Chapter 1 — Your First 7 Days
+## Your First 7 Days
 
 ::: pullquote
-"Consistency beats intensity when intensity prevents consistency."
+**"Consistency beats intensity when intensity prevents consistency."**
 :::
 
-Welcome to running! The first week is crucial—not for building fitness (that takes months), but for building the habit. This chapter will get you moving safely and confidently.
+Welcome to running! The first week is crucial - not for building fitness (that takes months), but for building the habit. This chapter will get you moving safely and confidently.
 
-## The 10-Minute Rule
+### The 10-Minute Rule
 
 If you feel flat before a run, start anyway and reassess after 10 minutes. If you still feel terrible, jog home and live to train another day. Most of the time, you'll feel better and continue.
 
 ::: note
-**Coach's Note**  
-Easy days should feel *easy*. If you can't hold a conversation while running, you're going too fast. Back off the pace.
+**Coach's Note:** Easy days should feel *easy*. If you can't hold a conversation while running, you're going too fast. Back off the pace.
 :::
 
-## Daily Checklist (Week 1)
+### Daily Checklist (Week 1)
 
 Every run this week should follow this structure:
 
@@ -26,7 +25,7 @@ Every run this week should follow this structure:
 - **4 × 20-second strides** (walk back recovery)
 - **5 minutes easy cool-down** (light jog → walking)
 
-### Weekly Schedule
+#### Weekly Schedule
 
 | Day | Run | Notes |
 |-----|-----|-------|
@@ -42,7 +41,7 @@ Every run this week should follow this structure:
 **Pro Tip:** Schedule your next day's run during today's cool-down. Habit stacking beats motivation every time.
 :::
 
-## What to Expect
+### What to Expect
 
 **Week 1 Goals:**
 - Complete 3–4 runs without injury
