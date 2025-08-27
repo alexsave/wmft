@@ -11,13 +11,10 @@
 \setsansfont{Helvetica}       % clean sans for headings  
 \setmonofont{Menlo}           % monospace
 
-% --- Microtypography ---
+% --- Microtypography & paragraph alignment ---
 \usepackage[final]{microtype}
-\microtypesetup{tracking=true,protrusion=true}
-% Reduce/avoid hyphenation within words
-\hyphenpenalty=10000
-\exhyphenpenalty=10000
-\emergencystretch=3em
+\microtypesetup{tracking=true,protrusion=false}
+\usepackage{ragged2e} % improved ragged-right with sensible hyphenation
 
 % --- Colors, links ---
 \usepackage[dvipsnames]{xcolor}
@@ -179,6 +176,15 @@ $if(date)$
 $else$
   \date{}
 $endif$
+
+% Left-align (ragged-right) all body text; prevent mid-word hyphenation and overflow
+\AtBeginDocument{%
+  \RaggedRight
+  \hyphenpenalty=10000
+  \exhyphenpenalty=10000
+  \sloppy
+  \emergencystretch=3em
+}
 
 \begin{document}
 $if(title)$
