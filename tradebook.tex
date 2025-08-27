@@ -14,6 +14,10 @@
 % --- Microtypography ---
 \usepackage[final]{microtype}
 \microtypesetup{tracking=true,protrusion=true}
+% Reduce/avoid hyphenation within words
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\emergencystretch=3em
 
 % --- Colors, links ---
 \usepackage[dvipsnames]{xcolor}
@@ -58,9 +62,9 @@
 \titlespacing*{\chapter}{0pt}{40pt}{30pt}
 
 % Clean section and subsection styles
-\titleformat{\section}{\sffamily\bfseries\LARGE\color{Ink}}{\thesection}{1em}{}
+\titleformat{\section}{\sffamily\bfseries\LARGE\color{Ink}\raggedright}{\thesection}{1em}{}
 \titlespacing*{\section}{0pt}{24pt}{12pt}
-\titleformat{\subsection}{\sffamily\bfseries\Large\color{Ink}}{\thesubsection}{1em}{}
+\titleformat{\subsection}{\sffamily\bfseries\Large\color{Ink}\raggedright}{\thesubsection}{1em}{}
 \titlespacing*{\subsection}{0pt}{18pt}{8pt}
 
 % --- Callouts & pull‑quotes (Four Hour Workweek style) ---

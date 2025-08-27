@@ -1,6 +1,6 @@
-# Backmatter
+# Backmatter {.unnumbered}
 
-## About the Author
+## About the Author {.unnumbered}
 
 Alex Saveliev has been running for 12+ years and helps busy people get faster with simple, sustainable training. He believes the best training plan is the one you'll actually follow.
 
@@ -8,7 +8,7 @@ When not running, Alex works in technology and lives with his family in the Paci
 
 Connect: [your-website.com](https://your-website.com) | [@yourusername](https://twitter.com/yourusername)
 
-## Acknowledgments
+## Acknowledgments {.unnumbered}
 
 This book exists because of the countless coaches, training partners, and fellow runners who've shared their knowledge over the years. Special thanks to:
 
@@ -16,7 +16,7 @@ This book exists because of the countless coaches, training partners, and fellow
 - Early readers who provided feedback on drafts
 - Family members who understood the early morning alarm clocks
 
-## Resources for Continued Learning
+## Resources for Continued Learning {.unnumbered}
 
 ### Books
 - *Daniels' Running Formula* by Jack Daniels
@@ -33,13 +33,13 @@ This book exists because of the countless coaches, training partners, and fellow
 - Parkrun offers free weekly 5Ks worldwide
 - Online communities like r/running provide support
 
-## Version & Changelog
+## Version & Changelog {.unnumbered}
 
 - **v1.0** - Initial release with complete 6-chapter structure
 - **v0.9** - Beta version with sample content
 - **v0.1** - Early draft and template setup
 
-## License & Copyright
+## License & Copyright {.unnumbered}
 
 © 2025 Alex Saveliev. All rights reserved. 
 
