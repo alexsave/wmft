@@ -1,0 +1,20 @@
+title: "Your Book Title"
+author: "Your Name"
+lang: en-US
+# PDF options
+colorlinks: true
+papersize: letter # or: a4, 6x9in
+geometry:
+- margin=1in
+fontsize: 11pt
+# Table of contents
+toc: true
+toc-depth: 2
+# Optional: set a custom TOC title
+# toc-title: Contents
+# Optional: PDF metadata
+subject: "A practical guide"
+keywords:
+- ebook
+- markdown
+- pandoc
