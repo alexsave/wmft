@@ -1,20 +1,13 @@
-title: "Your Book Title"
-author: "Your Name"
+title: "Into Running: Starter Playbook"
+author: "Alex Saveliev"
 lang: en-US
-# PDF options
-colorlinks: true
-papersize: letter # or: a4, 6x9in
-geometry:
-- margin=1in
+papersize: 6x9in
 fontsize: 11pt
-# Table of contents
+colorlinks: true
 toc: true
-toc-depth: 2
-# Optional: set a custom TOC title
-# toc-title: Contents
-# Optional: PDF metadata
-subject: "A practical guide"
-keywords:
-- ebook
-- markdown
-- pandoc
+# KOMA + tradebook template
+documentclass: scrbook
+classoption: [oneside]
+# Optional subtitle/date shown on title page
+subtitle: "Build speed, stay consistent, have fun"
+date: "v1.0"

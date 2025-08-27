@@ -1,0 +1,142 @@
+% Trade‑book Pandoc template (Four‑Hour‑Workweek vibe)
+% Uses: scrbook, titlesec, tcolorbox, fontspec, microtype
+\documentclass[11pt,oneside]{scrbook}
+
+% --- Page geometry: 6×9 in trade size ---
+\usepackage[paperwidth=6in,paperheight=9in,top=0.9in,bottom=1in,inner=0.9in,outer=0.9in]{geometry}
+
+% --- Fonts (macOS system fonts) ---
+\usepackage{fontspec}
+\setmainfont{Times New Roman} % bookish serif
+\setsansfont{Helvetica}       % clean sans for headings  
+\setmonofont{Menlo}           % monospace
+
+% --- Microtypography ---
+\usepackage[final]{microtype}
+\microtypesetup{tracking=true,protrusion=true}
+
+% --- Colors, links ---
+\usepackage[dvipsnames]{xcolor}
+\definecolor{Accent}{HTML}{0B6E99}      % teal-ish accent
+\definecolor{Ink}{HTML}{222222}
+\definecolor{GrayBg}{HTML}{F7F7F7}
+\usepackage[unicode]{hyperref}
+\hypersetup{colorlinks=true, linkcolor=Accent, urlcolor=Accent, citecolor=Accent}
+
+% --- Headers/footers (KOMA) ---
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+\fancyhead[L]{\sffamily\footnotesize\leftmark}
+\renewcommand{\headrulewidth}{0pt}
+
+% --- Paragraph look ---
+\setlength{\parindent}{14pt}
+\setlength{\parskip}{3pt}
+\linespread{1.08}
+
+% --- Chapter & section styling ---
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+  {\sffamily\bfseries\Huge\color{Ink}}
+  {\Large\color{black!55}\MakeUppercase{\chaptertitlename}\,\thechapter}
+  {0.5ex}
+  {\vspace{0.4ex}\rule{\textwidth}{0.6pt}\\[0.75ex]}
+  [\vspace{-0.4ex}\rule{\textwidth}{0.6pt}]
+\titlespacing*{\chapter}{0pt}{*3}{*2}
+\titleformat{\section}{\sffamily\bfseries\Large\color{Ink}}{\thesection}{0.6em}{}
+\titleformat{\subsection}{\sffamily\bfseries\large\color{Ink}}{\thesubsection}{0.6em}{}
+
+% --- Callouts & pull‑quotes ---
+\usepackage[most]{tcolorbox}
+\tcbset{sharp corners, boxsep=5pt, left=8pt, right=8pt, top=8pt, bottom=8pt}
+\newtcolorbox{notebox}{breakable, colback=Accent!4, colframe=Accent!60!black, borderline west={3pt}{0pt}{Accent!80!black}}
+\newtcolorbox{tipbox}{breakable, colback=ForestGreen!5, colframe=ForestGreen!50!black, borderline west={3pt}{0pt}{ForestGreen!70!black}}
+\newtcolorbox{pullquote}{breakable, colback=GrayBg, colframe=black!10, borderline west={3pt}{0pt}{black!25}, fontupper=\itshape}
+
+% --- Tables ---
+\usepackage{longtable}
+\usepackage{booktabs}
+
+% --- Figure & table captions (clean) ---
+\usepackage{caption}
+\captionsetup{labelfont={sf,bf,small}, textfont={sf,small}, justification=raggedright, singlelinecheck=false}
+
+% --- Code blocks ---
+\usepackage{fancyvrb}
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+
+% --- Pandoc compatibility ---
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\usepackage{amssymb}
+
+% --- Pandoc variables ---
+$if(title)$
+  \title{\sffamily\bfseries\Huge $title$}
+$endif$
+$if(subtitle)$
+  \subtitle{\sffamily\Large\color{black!60} $subtitle$}
+$endif$
+$if(author)$
+  \author{\sffamily\large $for(author)$$author$$sep$ \and $endfor$}
+$endif$
+$if(date)$
+  \date{\sffamily $date$}
+$else$
+  \date{}
+$endif$
+
+\begin{document}
+\frontmatter
+$if(title)$
+  \maketitle
+$endif$
+$if(toc)$
+  \tableofcontents
+  \cleardoublepage
+$endif$
+
+\mainmatter
+$body$
+
+\backmatter
+$if(colophon)$
+  \chapter*{Colophon}
+  $colophon$
+$endif$
+\end{document}

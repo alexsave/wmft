@@ -1,16 +1,17 @@
-PDF=dist/Your-Book-v1.0.pdf
+PDF=dist/Into-Running-v1.0.pdf
 MD=$(shell ls markdown/*.md | sort)
 
-build: $(PDF)
-
-$(PDF): $(MD) book.yml
+build:
 	mkdir -p dist
-	pandoc --from=gfm \
-	--metadata-file=book.yml \
-	--pdf-engine=xelatex \
-	--toc --toc-depth=2 \
-	$(MD) -o $(PDF)
-	@echo "\nBuilt $(PDF)"
+	pandoc $(MD) \
+	  --from=gfm \
+	  --metadata-file=book.yml \
+	  --template=tradebook.tex \
+	  --lua-filter=boxes.lua \
+	  --pdf-engine=xelatex \
+	  --toc --toc-depth=2 \
+	  -o $(PDF)
+	@echo "Built $(PDF)"
 
 clean:
 	rm -rf dist
