@@ -15,7 +15,7 @@
 
 ## Technical Stack
 
-Built using modern publishing tools: **Pandoc** + **XeLaTeX** + **KOMA-Script** with custom LaTeX template for professional trade book design.
+Built using **Pandoc** + **XeLaTeX** + **KOMA-Script** with custom LaTeX template for professional trade book design.
 
 ```bash
 make build    # Generate PDF
